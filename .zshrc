@@ -4,7 +4,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
-PATH=$HOME:$HOME/bin:$PATH
+PATH=$HOME:$HOME/bin:/commands:$PATH
 
 #zmodload zsh/complist
 autoload -Uz compinit  promptinit vcs_info
@@ -38,3 +38,8 @@ PROMPT='%F{white}%m at %F{yellow}%n%f %F{blue}%~%f %F{green}${vcs_info_msg_0_}%f
 
 #vi mode
 bindkey -v
+
+export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
+export VISUAL=nvim
+export EDITOR=nvim
+export TERMINAL=kitty

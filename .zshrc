@@ -43,3 +43,5 @@ export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
 export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=kitty
+export GTK_THEME=Adwaita:dark
+eval "$(pyenv init -)"

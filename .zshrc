@@ -51,5 +51,8 @@ export QT_QPA_PLATFORMTHEME=qt6ct
 eval "$(pyenv init -)"
 
 
-alias hypr-lua="rm -f ~/.confg/hypr/hyprland.conf;ln -sfn ../hypr-lua/hyprland.lua ~/.config/hypr/hyprland.lua"
-alias hypr-stable="rm -f ~/.config/hyprland.lua;ln -sfn custom/testing_hyprland_config.conf ~/.config/hypr/hyprland.conf"
+#alias hypr-lua="rm -f ~/.confg/hypr/hyprland.conf;ln -sfn ../hypr-lua/hyprland.lua ~/.config/hypr/hyprland.lua"
+#alias hypr-stable="rm -f ~/.config/hyprland.lua;ln -sfn custom/testing_hyprland_config.conf ~/.config/hypr/hyprland.conf"
+alias hypr-lua="ln -sfn ~/.config/hypr-lua/hyprland.lua ~/.config/hypr/hyprland.lua && rm -f ~/.config/hypr/hyprland.conf"
+alias hypr-stable="ln -sfn ~/.config/hypr/custom/testing_hyprland_config.conf ~/.config/hypr/hyprland.conf && rm -f ~/.config/hypr/hyprland.lua"
+
